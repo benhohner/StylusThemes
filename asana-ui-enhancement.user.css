@@ -16,7 +16,8 @@
 .SidebarInvite,
 .topbarContingentUpgradeButton-button,
 .TopbarPageHeaderGlobalActions-omnibutton,
-.TopbarPageHeaderGlobalActions-upgradeButton {
+.TopbarPageHeaderGlobalActions-upgradeButton,
+.SidebarTopNavLinks-myPortfoliosbutton {
 	display: none;
 }
 
