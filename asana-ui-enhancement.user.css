@@ -2,7 +2,7 @@
 @name         Asana UI Enhancement
 @description  Remove bloat, ads, make cards smaller and extraneous UI smaller.
 @namespace    https://github.com/benhohner
-@version      0.3.0
+@version      0.4.0
 @author       benhohner <bennohner@gmail.com> (https://github.com/benhohner)
 @homepageURL  https://github.com/benhohner/StylusThemes
 @supportURL   https://github.com/benhohner/StylusThemes/issues
@@ -70,6 +70,15 @@
 	position: absolute;
 	top: -1px;
 	left: 0px;
+}
+
+.SubtaskTaskRow-detailsButton.SubtaskTaskRow-detailsButton--hasMetadata {
+	color: green;
+	fill: green; /* More visible metadata button TODO: replace colour with colourscheme colour */
+}
+
+.SubtaskTaskRow-detailsButton {
+	height: 34px; /* larger touch target */
 }
 
 }
