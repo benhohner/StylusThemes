@@ -2,7 +2,7 @@
 @name         Asana UI Enhancement
 @description  Remove bloat, ads, make cards smaller and extraneous UI smaller.
 @namespace    https://github.com/benhohner
-@version      0.5.0
+@version      0.5.1
 @author       benhohner <bennohner@gmail.com> (https://github.com/benhohner)
 @homepageURL  https://github.com/benhohner/StylusThemes
 @supportURL   https://github.com/benhohner/StylusThemes/issues
@@ -63,7 +63,7 @@
 }
 	
 /* Remove 1px translate */
-.BoardCardWithCustomProperties--hover {
+.BoardCardWithCustomProperties.BoardCardWithCustomProperties--hover {
 	translate: none;
 }
 
