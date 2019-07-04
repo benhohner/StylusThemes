@@ -64,7 +64,7 @@
 	
 /* Remove 1px translate */
 .BoardCardWithCustomProperties.BoardCardWithCustomProperties--hover {
-	translate: none;
+	transform: none;
 }
 
 /* Resize and move pills / tags */
