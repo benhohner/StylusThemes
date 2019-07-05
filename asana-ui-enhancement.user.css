@@ -2,7 +2,7 @@
 @name         Asana UI Enhancement
 @description  Remove bloat, ads, make cards smaller and extraneous UI smaller.
 @namespace    https://github.com/benhohner
-@version      1.1.0
+@version      1.1.1
 @author       benhohner <bennohner@gmail.com> (https://github.com/benhohner)
 @homepageURL  https://github.com/benhohner/StylusThemes
 @supportURL   https://github.com/benhohner/StylusThemes/issues
@@ -12,6 +12,16 @@
 ==/UserStyle== */
 
 @-moz-document domain("app.asana.com") {
+	/* Remove Distracting Colours */
+	.FavoriteStar-favorited {
+		fill: #848f99;
+	}
+	
+	.SidebarTopNavLinks-notificationsButton--hasNewNotifications::after {
+		background: #848f99;
+	}
+	
+	
 	/* Remove Borders */
 	.Sidebar-section {
 		border-bottom: none;
@@ -53,8 +63,8 @@
 
 
 	/* Topbar UI Improvements */
-	.page-topbar {
-		padding: 0 20px 0 0;
+	.page-topbar .ChipWithIcon {
+		margin-left: -20px;
 	}
 	
 	.ChipWithIcon {
@@ -114,11 +124,21 @@
 		padding-bottom: 2px;
 	}
 
+	/* Card project UI Improvements */
+	.BoardColumnHeader-dropdownButton {
+		display: none;
+	}
+	
 	/* Move add card button */
 	.BoardColumn-addCardButton {
 		margin-top: 0px;
 		position: absolute;
 		right: 10px;
+	}
+	
+	.BoardColumn-addCardButton.CardButton {
+		background: transparent;
+		box-shadow: none;
 	}
 
 	.scrollable--vertical {
