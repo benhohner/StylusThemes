@@ -2,7 +2,7 @@
 @name         Asana UI Enhancement
 @description  Remove bloat, ads, make cards smaller and extraneous UI smaller.
 @namespace    https://github.com/benhohner
-@version      0.5.2
+@version      1.0.0
 @author       benhohner <bennohner@gmail.com> (https://github.com/benhohner)
 @homepageURL  https://github.com/benhohner/StylusThemes
 @supportURL   https://github.com/benhohner/StylusThemes/issues
@@ -12,13 +12,69 @@
 ==/UserStyle== */
 
 @-moz-document domain("app.asana.com") {
+	/* Remove Borders */
+	.PageToolbarStructure--withShadow {
+		border-top: none;
+	}
+	
+	.PageToolbarStructure {
+		border-top: none;
+		border-bottom: none;
+	}
+	
+	.TaskRow:not(.TaskRow--borderless)::after {
+		border-bottom: none;
+	}
+	
+	.SectionRow-sectionName {
+		border-bottom: none;
+	}
+	
+	.GutterContainer::before {
+		width: auto;
+		border-right: none;
+	}
+	
+	.TaskStoryFeed-separator {
+		display: none;
+	}
+	
+	.TaskPaneAssigneeDueDateRowStructure {
+		border-bottom: none;
+	}
+	
+	.FollowersBar {
+		border-top: none;
+	}
 
+	
+	/* Remove Add Section button from list projects */
+	.ItemListAddSectionButton {
+		display: none;
+	}
+	
+	/* Improve followers bar UI */
+	.FollowersLabel {
+		display: none;
+	}
+	
+	.ToggleFollowButton-toggleButton {
+		order: -1;
+		margin-right: 10px;
+		margin-left: 0;
+	}
+	
+	/* Hide annoying ads */
 	.SidebarInvite,
 	.topbarContingentUpgradeButton-button,
 	.TopbarPageHeaderGlobalActions-omnibutton,
 	.TopbarPageHeaderGlobalActions-upgradeButton,
 	.SidebarTopNavLinks-myPortfoliosbutton {
 		display: none;
+	}
+	
+	.TopbarHelpMenuButton {
+		margin-left: 15px; /* Add some margin because preceding element is hidden */
 	}
 
 	.PageToolbarStructure {
@@ -51,7 +107,7 @@
 
 	.scrollable--horizontal::-webkit-scrollbar,
 	.scrollable--vertical::-webkit-scrollbar {
-		width: 0 !important
+		width: 0 !important;
 	}
 
 	.scrollable--horizontal {
