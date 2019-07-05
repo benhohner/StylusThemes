@@ -13,83 +13,83 @@
 
 @-moz-document domain("app.asana.com") {
 
-.SidebarInvite,
-.topbarContingentUpgradeButton-button,
-.TopbarPageHeaderGlobalActions-omnibutton,
-.TopbarPageHeaderGlobalActions-upgradeButton,
-.SidebarTopNavLinks-myPortfoliosbutton {
-	display: none;
-}
+	.SidebarInvite,
+	.topbarContingentUpgradeButton-button,
+	.TopbarPageHeaderGlobalActions-omnibutton,
+	.TopbarPageHeaderGlobalActions-upgradeButton,
+	.SidebarTopNavLinks-myPortfoliosbutton {
+		display: none;
+	}
 
-.PageToolbarStructure {
-	height: auto;
-}
+	.PageToolbarStructure {
+		height: auto;
+	}
 
-.BoardBody-columnHorizontalScrollable {
-	padding: 25px 10px 0;
-}
+	.BoardBody-columnHorizontalScrollable {
+		padding: 25px 10px 0;
+	}
 
-.TopbarSearchTypeahead,
-.TopbarPageHeaderStructure {
-	height: 60px;
-}
+	.TopbarSearchTypeahead,
+	.TopbarPageHeaderStructure {
+		height: 60px;
+	}
 
-.Tab {
-	padding-bottom: 2px;
-}
+	.Tab {
+		padding-bottom: 2px;
+	}
 
-/* Move add card button */
-.BoardColumn-addCardButton {
-	margin-top: 0px;
-	position: absolute;
-	right: 10px;
-}
+	/* Move add card button */
+	.BoardColumn-addCardButton {
+		margin-top: 0px;
+		position: absolute;
+		right: 10px;
+	}
 
-.scrollable--vertical {
-	overflow-y: scroll;
-}
+	.scrollable--vertical {
+		overflow-y: scroll;
+	}
 
-.scrollable--horizontal::-webkit-scrollbar,
-.scrollable--vertical::-webkit-scrollbar {
-	width: 0 !important
-}
+	.scrollable--horizontal::-webkit-scrollbar,
+	.scrollable--vertical::-webkit-scrollbar {
+		width: 0 !important
+	}
 
-.scrollable--horizontal {
-	overflow-x: scroll;
-}
+	.scrollable--horizontal {
+		overflow-x: scroll;
+	}
 
-.BoardColumnWithSortableTasks-sortableList.is-empty::before {
-	display: none;
-}
-	
-/* Remove 1px translate */
-.BoardCardWithCustomProperties.BoardCardWithCustomProperties--hover {
-	transform: none;
-}
+	.BoardColumnWithSortableTasks-sortableList.is-empty::before {
+		display: none;
+	}
 
-/* Resize and move pills / tags */
-.BoardCardWithCustomProperties-potPills {
-    margin-bottom: 0px;
-    position: absolute;
-    top: 4px;
-    left: 20px;
-    width: 100%;
-}
+	/* Remove 1px translate */
+	.BoardCardWithCustomProperties.BoardCardWithCustomProperties--hover {
+		transform: none;
+	}
 
-.BoardCardPotPills-potPill {
-	border-radius: 2px;
-	height: 2px;
-	margin: 0;
-	width: 19%;
-}
+	/* Resize and move pills / tags */
+	.BoardCardWithCustomProperties-potPills {
+	    margin-bottom: 0px;
+	    position: absolute;
+	    top: 4px;
+	    left: 20px;
+	    width: 100%;
+	}
 
-.SubtaskTaskRow-detailsButton.SubtaskTaskRow-detailsButton--hasMetadata {
-	color: green;
-	fill: green; /* More visible metadata button TODO: replace colour with colourscheme colour */
-}
+	.BoardCardPotPills-potPill {
+		border-radius: 2px;
+		height: 2px;
+		margin: 0;
+		width: 19%;
+	}
 
-.SubtaskTaskRow-detailsButton {
-	height: 34px; /* larger touch target */
-}
+	.SubtaskTaskRow-detailsButton.SubtaskTaskRow-detailsButton--hasMetadata {
+		color: green;
+		fill: green; /* More visible metadata button TODO: replace colour with colourscheme colour */
+	}
+
+	.SubtaskTaskRow-detailsButton {
+		height: 34px; /* larger touch target */
+	}
 
 }
