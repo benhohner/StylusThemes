@@ -187,5 +187,10 @@
 	.SubtaskTaskRow-detailsButton {
 		height: 34px; /* larger touch target */
 	}
+	
+	/* Make expired tasks with due dates not have red due dates Note: list projects already fixed by Asana */
+	.BoardCardWithCustomProperties--completed .DueDate--past {
+		color: #646f79;
+	}
 
 }
